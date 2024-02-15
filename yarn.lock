@@ -9,6 +9,14 @@
   dependencies:
     "@babel/highlight" "^7.10.4"
 
+"@babel/code-frame@^7.23.5":
+  version "7.23.5"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.23.5.tgz#9009b69a8c602293476ad598ff53e4562e15c244"
+  integrity sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==
+  dependencies:
+    "@babel/highlight" "^7.23.4"
+    chalk "^2.4.2"
+
 "@babel/compat-data@^7.10.4", "@babel/compat-data@^7.11.0":
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.11.0.tgz#e9f73efe09af1355b723a7f39b11bad637d7c99c"
@@ -40,7 +48,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.11.5", "@babel/generator@^7.11.6":
+"@babel/generator@^7.11.6":
   version "7.11.6"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.11.6.tgz#b868900f81b163b4d464ea24545c61cbac4dc620"
   integrity sha512-DWtQ1PV3r+cLbySoHrwn9RWEgKMBLLma4OBQloPRyDYvc5msJM9kvTLo1YnlJd1P/ZuKbdli3ijr5q3FvAF3uA==
@@ -48,6 +56,16 @@
     "@babel/types" "^7.11.5"
     jsesc "^2.5.1"
     source-map "^0.5.0"
+
+"@babel/generator@^7.23.6":
+  version "7.23.6"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.23.6.tgz#9e1fca4811c77a10580d17d26b57b036133f3c2e"
+  integrity sha512-qrSfCYxYQB5owCmGLbl8XRpX1ytXlpueOb0N0UmQwA073KZxejgQTzAmJezxvpwQD9uGtK2shHdi55QT+MbjIw==
+  dependencies:
+    "@babel/types" "^7.23.6"
+    "@jridgewell/gen-mapping" "^0.3.2"
+    "@jridgewell/trace-mapping" "^0.3.17"
+    jsesc "^2.5.1"
 
 "@babel/helper-annotate-as-pure@^7.10.4":
   version "7.10.4"
@@ -105,6 +123,11 @@
     "@babel/types" "^7.10.5"
     lodash "^4.17.19"
 
+"@babel/helper-environment-visitor@^7.22.20":
+  version "7.22.20"
+  resolved "https://registry.yarnpkg.com/@babel/helper-environment-visitor/-/helper-environment-visitor-7.22.20.tgz#96159db61d34a29dba454c959f5ae4a649ba9167"
+  integrity sha512-zfedSIzFhat/gFhWfHtgWvlec0nqB9YEIVrpuwjruLlXfUSnA8cJB0miHKwqDnQ7d32aKo2xt88/xZptwxbfhA==
+
 "@babel/helper-explode-assignable-expression@^7.10.4":
   version "7.11.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-explode-assignable-expression/-/helper-explode-assignable-expression-7.11.4.tgz#2d8e3470252cc17aba917ede7803d4a7a276a41b"
@@ -121,6 +144,14 @@
     "@babel/template" "^7.10.4"
     "@babel/types" "^7.10.4"
 
+"@babel/helper-function-name@^7.23.0":
+  version "7.23.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.23.0.tgz#1f9a3cdbd5b2698a670c30d2735f9af95ed52759"
+  integrity sha512-OErEqsrxjZTJciZ4Oo+eoZqeW9UIiOcuYKRJA4ZAgV9myA+pOXhhmpfNCKjEH/auVfEYVFJ6y1Tc4r0eIApqiw==
+  dependencies:
+    "@babel/template" "^7.22.15"
+    "@babel/types" "^7.23.0"
+
 "@babel/helper-get-function-arity@^7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.10.4.tgz#98c1cbea0e2332f33f9a4661b8ce1505b2c19ba2"
@@ -134,6 +165,13 @@
   integrity sha512-wljroF5PgCk2juF69kanHVs6vrLwIPNp6DLD+Lrl3hoQ3PpPPikaDRNFA+0t81NOoMt2DL6WW/mdU8k4k6ZzuA==
   dependencies:
     "@babel/types" "^7.10.4"
+
+"@babel/helper-hoist-variables@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.yarnpkg.com/@babel/helper-hoist-variables/-/helper-hoist-variables-7.22.5.tgz#c01a007dac05c085914e8fb652b339db50d823bb"
+  integrity sha512-wGjk9QZVzvknA6yKIUURb8zY3grXCcOZt+/7Wcy8O2uctxhplmUPkOdlgoNhmdVee2c92JXbf1xpMtVNbfoxRw==
+  dependencies:
+    "@babel/types" "^7.22.5"
 
 "@babel/helper-member-expression-to-functions@^7.10.4", "@babel/helper-member-expression-to-functions@^7.10.5":
   version "7.11.0"
@@ -223,10 +261,27 @@
   dependencies:
     "@babel/types" "^7.11.0"
 
+"@babel/helper-split-export-declaration@^7.22.6":
+  version "7.22.6"
+  resolved "https://registry.yarnpkg.com/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.22.6.tgz#322c61b7310c0997fe4c323955667f18fcefb91c"
+  integrity sha512-AsUnxuLhRYsisFiaJwvp1QF+I3KjD5FOxut14q/GzovUe6orHLesW2C7d754kRm53h5gqrz6sFl6sxc4BVtE/g==
+  dependencies:
+    "@babel/types" "^7.22.5"
+
+"@babel/helper-string-parser@^7.23.4":
+  version "7.23.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-string-parser/-/helper-string-parser-7.23.4.tgz#9478c707febcbbe1ddb38a3d91a2e054ae622d83"
+  integrity sha512-803gmbQdqwdf4olxrX4AJyFBV/RTr3rSmOj0rKwesmzlfhYNDEs+/iOcznzpNWlJlIlTJC2QfPFcHB6DlzdVLQ==
+
 "@babel/helper-validator-identifier@^7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.4.tgz#a78c7a7251e01f616512d31b10adcf52ada5e0d2"
   integrity sha512-3U9y+43hz7ZM+rzG24Qe2mufW5KhvFg/NhnNph+i9mgCtdTCtMJuI1TMkrIUiK7Ix4PYlRF9I5dhqaLYA/ADXw==
+
+"@babel/helper-validator-identifier@^7.22.20":
+  version "7.22.20"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.20.tgz#c4ae002c61d2879e724581d96665583dbc1dc0e0"
+  integrity sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==
 
 "@babel/helper-wrap-function@^7.10.4":
   version "7.10.4"
@@ -256,10 +311,24 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@babel/highlight@^7.23.4":
+  version "7.23.4"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.23.4.tgz#edaadf4d8232e1a961432db785091207ead0621b"
+  integrity sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.22.20"
+    chalk "^2.4.2"
+    js-tokens "^4.0.0"
+
 "@babel/parser@^7.10.4", "@babel/parser@^7.11.5", "@babel/parser@^7.7.0":
   version "7.11.5"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.11.5.tgz#c7ff6303df71080ec7a4f5b8c003c58f1cf51037"
   integrity sha512-X9rD8qqm695vgmeaQ4fvz/o3+Wk4ZzQvSHkDBgpYKxpD4qTAUm88ZKtHkVqIOsYFFbIQ6wQYhC6q7pjqVK0E0Q==
+
+"@babel/parser@^7.23.9":
+  version "7.23.9"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.9.tgz#7b903b6149b0f8fa7ad564af646c4c38a77fc44b"
+  integrity sha512-9tcKgqKbs3xGJ+NtKF2ndOBBLVwPjl1SHxPQkd36r3Dlirw3xWUeGaTbqr7uGZcTaxkVNwc+03SVP7aCdWrTlA==
 
 "@babel/plugin-proposal-async-generator-functions@^7.10.4":
   version "7.10.5"
@@ -837,20 +906,30 @@
     "@babel/parser" "^7.10.4"
     "@babel/types" "^7.10.4"
 
-"@babel/traverse@^7.0.0", "@babel/traverse@^7.10.4", "@babel/traverse@^7.11.5", "@babel/traverse@^7.7.0":
-  version "7.11.5"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.11.5.tgz#be777b93b518eb6d76ee2e1ea1d143daa11e61c3"
-  integrity sha512-EjiPXt+r7LiCZXEfRpSJd+jUMnBd4/9OUv7Nx3+0u9+eimMwJmG0Q98lw4/289JCoxSE8OolDMNZaaF/JZ69WQ==
+"@babel/template@^7.22.15":
+  version "7.23.9"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.23.9.tgz#f881d0487cba2828d3259dcb9ef5005a9731011a"
+  integrity sha512-+xrD2BWLpvHKNmX2QbpdpsBaWnRxahMwJjO+KZk2JOElj5nSmKezyS1B4u+QbHMTX69t4ukm6hh9lsYQ7GHCKA==
   dependencies:
-    "@babel/code-frame" "^7.10.4"
-    "@babel/generator" "^7.11.5"
-    "@babel/helper-function-name" "^7.10.4"
-    "@babel/helper-split-export-declaration" "^7.11.0"
-    "@babel/parser" "^7.11.5"
-    "@babel/types" "^7.11.5"
-    debug "^4.1.0"
+    "@babel/code-frame" "^7.23.5"
+    "@babel/parser" "^7.23.9"
+    "@babel/types" "^7.23.9"
+
+"@babel/traverse@^7.0.0", "@babel/traverse@^7.10.4", "@babel/traverse@^7.11.5", "@babel/traverse@^7.7.0":
+  version "7.23.9"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.23.9.tgz#2f9d6aead6b564669394c5ce0f9302bb65b9d950"
+  integrity sha512-I/4UJ9vs90OkBtY6iiiTORVMyIhJ4kAVmsKo9KFc8UOxMeUfi2hvtIBsET5u9GizXE6/GFSuKCTNfgCswuEjRg==
+  dependencies:
+    "@babel/code-frame" "^7.23.5"
+    "@babel/generator" "^7.23.6"
+    "@babel/helper-environment-visitor" "^7.22.20"
+    "@babel/helper-function-name" "^7.23.0"
+    "@babel/helper-hoist-variables" "^7.22.5"
+    "@babel/helper-split-export-declaration" "^7.22.6"
+    "@babel/parser" "^7.23.9"
+    "@babel/types" "^7.23.9"
+    debug "^4.3.1"
     globals "^11.1.0"
-    lodash "^4.17.19"
 
 "@babel/types@^7.0.0", "@babel/types@^7.10.4", "@babel/types@^7.10.5", "@babel/types@^7.11.0", "@babel/types@^7.11.5", "@babel/types@^7.4.4", "@babel/types@^7.7.0":
   version "7.11.5"
@@ -859,6 +938,15 @@
   dependencies:
     "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.22.5", "@babel/types@^7.23.0", "@babel/types@^7.23.6", "@babel/types@^7.23.9":
+  version "7.23.9"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.23.9.tgz#1dd7b59a9a2b5c87f8b41e52770b5ecbf492e002"
+  integrity sha512-dQjSq/7HaSjRM43FFGnv5keM2HsxpmyV1PfaSVm0nzzjwwTmjOe6J4bC8e3+pTEIgHaHj+1ZlLThRJ2auc/w1Q==
+  dependencies:
+    "@babel/helper-string-parser" "^7.23.4"
+    "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
 "@hapi/address@2.x.x":
@@ -902,6 +990,76 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@intlify/core-base@9.2.0-beta.2":
+  version "9.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.2.0-beta.2.tgz#9f7e7651daa0c260376933eb13caede41cf12bbb"
+  integrity sha512-WwbeGIyTiR34PfPcEGwI6Q0LcLUbB7Qt+xp+IwApYqZa1RFnMIuRR9GueTGijtqhtFEvq+R7Mjy5rPRhszR4Sw==
+  dependencies:
+    "@intlify/devtools-if" "9.2.0-beta.2"
+    "@intlify/message-compiler" "9.2.0-beta.2"
+    "@intlify/shared" "9.2.0-beta.2"
+    "@intlify/vue-devtools" "9.2.0-beta.2"
+
+"@intlify/devtools-if@9.2.0-beta.2":
+  version "9.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@intlify/devtools-if/-/devtools-if-9.2.0-beta.2.tgz#e7c951f5c810d227454e170bdc1959fa6728f53f"
+  integrity sha512-8we6S/ICDD8U7WFhNS8rZivZnc4wd977iloiqm4zbYuWv2EMfc/434HwtfM43RrA2rZoLMUju4NY8u6N+Xh1Xg==
+  dependencies:
+    "@intlify/shared" "9.2.0-beta.2"
+
+"@intlify/message-compiler@9.2.0-beta.2":
+  version "9.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.2.0-beta.2.tgz#7b62a48e67958942e127d65d36f82c00761f7b26"
+  integrity sha512-zlpLz1QQ/DLhq9QnGE3QE8RR7EZKekjVreERr18FsQP0eFWsLa86RSHzDQMCDzhKg7rbh+A6xwcCJZpHT+szfg==
+  dependencies:
+    "@intlify/shared" "9.2.0-beta.2"
+    source-map "0.6.1"
+
+"@intlify/shared@9.2.0-beta.2":
+  version "9.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.2.0-beta.2.tgz#b20258139e1e9ebb14ae7e6d03cc1746628c65dc"
+  integrity sha512-q3rqaYpFnD9CQQ5nZz4qwz6rV6U/+2Jw7y6/CiyDD+GNn12im9utAQ8y9CR5pMqsGkCm2SLXbaMteaNKMEpg8w==
+
+"@intlify/vue-devtools@9.2.0-beta.2":
+  version "9.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@intlify/vue-devtools/-/vue-devtools-9.2.0-beta.2.tgz#eb45e68f8b6b836486a9829d22fafd8e5bc251a0"
+  integrity sha512-bLy4BoGRaeq5YNMyKcUnxzlEX92U+JO4mM+MOXIhM7W/zQ2Yv39eH+06hzI5jhND9DTSdWeNFIv5s6CfsLB7Xg==
+  dependencies:
+    "@intlify/core-base" "9.2.0-beta.2"
+    "@intlify/shared" "9.2.0-beta.2"
+
+"@jridgewell/gen-mapping@^0.3.2":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
+  integrity sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==
+  dependencies:
+    "@jridgewell/set-array" "^1.0.1"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
+    "@jridgewell/trace-mapping" "^0.3.9"
+
+"@jridgewell/resolve-uri@^3.1.0":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz#7a0ee601f60f99a20c7c7c5ff0c80388c1189bd6"
+  integrity sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==
+
+"@jridgewell/set-array@^1.0.1":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@jridgewell/set-array/-/set-array-1.1.2.tgz#7c6cf998d6d20b914c0a55a91ae928ff25965e72"
+  integrity sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==
+
+"@jridgewell/sourcemap-codec@^1.4.10", "@jridgewell/sourcemap-codec@^1.4.14":
+  version "1.4.15"
+  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
+  integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
+
+"@jridgewell/trace-mapping@^0.3.17", "@jridgewell/trace-mapping@^0.3.9":
+  version "0.3.22"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.22.tgz#72a621e5de59f5f1ef792d0793a82ee20f645e4c"
+  integrity sha512-Wf963MzWtA2sjrNt+g18IAln9lKnlRp+K2eH4jjIoF1wYeq3aMREpG09xhlhdzS0EjwU7qmUJYangWa+151vZw==
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.1.0"
+    "@jridgewell/sourcemap-codec" "^1.4.14"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -928,6 +1086,186 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
+
+"@syncfusion/ej2-base@*", "@syncfusion/ej2-base@~24.2.3", "@syncfusion/ej2-base@~24.2.5":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-base/-/ej2-base-24.2.5.tgz#92815741baaf2833b1a9e48f1b743842087d020f"
+  integrity sha512-3EtDX4x5Rcmp9ceWvmbOb7ZKxr0N93N9lD5Jysb6YCHcMhw9e3x+KBJvTY8JRJvPr7/P/tol+2+6p8HNZJ4pWw==
+  dependencies:
+    "@syncfusion/ej2-icons" "~24.2.3"
+
+"@syncfusion/ej2-buttons@~24.2.3", "@syncfusion/ej2-buttons@~24.2.5":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-buttons/-/ej2-buttons-24.2.5.tgz#59e0c9c4737b9517922853fdf7c6d541257eda7f"
+  integrity sha512-sLkljcComzbB3LmQhUhFTjgbnL2K8G+xqiQxHRaXwASyNppg+IsJZpozWbdGacZYrBTiUizVHKJTYeySDFgwWA==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+
+"@syncfusion/ej2-calendars@~24.2.5":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-calendars/-/ej2-calendars-24.2.5.tgz#cf69ccb5c4eaa88651662b181fa6e0149fac6b17"
+  integrity sha512-+pBpHJDqMubvIa3R1NOW0S6wjG7zWBjqWz32gYcz3fi2N2K1UyecvJ4xZINT5Ct5wZNP/EAE5t7AFqlbxjCo6Q==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-buttons" "~24.2.5"
+    "@syncfusion/ej2-inputs" "~24.2.5"
+    "@syncfusion/ej2-lists" "~24.2.4"
+    "@syncfusion/ej2-popups" "~24.2.5"
+
+"@syncfusion/ej2-compression@~24.2.3":
+  version "24.2.3"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-compression/-/ej2-compression-24.2.3.tgz#dcab1e3f76b2fa0126cb44a547997248a758c16b"
+  integrity sha512-ZjDxhlxf2cWoRGLOVwYhEW/RUhzDtyGOZ2VlcG0KT0L4EFVdAHHKSY40urDtpCTWln4fW0Ki6KFDsM9gWnNLeQ==
+  dependencies:
+    "@syncfusion/ej2-file-utils" "~24.2.3"
+
+"@syncfusion/ej2-data@~24.2.3":
+  version "24.2.3"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-data/-/ej2-data-24.2.3.tgz#d7b20d8ec8c5e4f75a4561abc558f4aa2c3bb89c"
+  integrity sha512-nZai/hmBuD2tAAXPF/oHZj5z6UfqjQ9PIlKvt+rOFdvQ5pOQHavv+OUpdUAeQPijgqzprnUVcmRlsn7XcS17bw==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+
+"@syncfusion/ej2-dropdowns@~24.2.5":
+  version "24.2.6"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-dropdowns/-/ej2-dropdowns-24.2.6.tgz#1726c495d5ed6df254dc57d49ecf10390ed8443e"
+  integrity sha512-gY/xt7z4nD9V6HPvVetNjjQO6Lt6LGQjh8DPrq5Slh7q+4PsOToETCi/8ZaAaI9glqb3AfH7GYJXnzPK1vMlVg==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-data" "~24.2.3"
+    "@syncfusion/ej2-inputs" "~24.2.6"
+    "@syncfusion/ej2-lists" "~24.2.4"
+    "@syncfusion/ej2-navigations" "~24.2.4"
+    "@syncfusion/ej2-notifications" "~24.2.4"
+    "@syncfusion/ej2-popups" "~24.2.5"
+
+"@syncfusion/ej2-excel-export@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-excel-export/-/ej2-excel-export-24.2.4.tgz#fbabfc9bb33a4e95126bc907d984b53ed4617a16"
+  integrity sha512-ppMKz6nCxoUQYlfI6iqv4pfyhb8ZZJlfkaTpgcj4oys/Oss6MgQgZrpVepyFBoW735NtvM0BOVrs6ZnAui03jg==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+    "@syncfusion/ej2-compression" "~24.2.3"
+
+"@syncfusion/ej2-file-utils@~24.2.3":
+  version "24.2.3"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-file-utils/-/ej2-file-utils-24.2.3.tgz#7180086e613b3d8fd43ed24cfcf0bc0a9fb01191"
+  integrity sha512-kPejWNjWoougUu/tsxh6ywKR/cr5+2tIZO1BUWlTO+XyFk/uolZ4Xx14tGVnrLpzl4+DaSLfv73b6VDvqpIbzg==
+
+"@syncfusion/ej2-grids@24.2.5":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-grids/-/ej2-grids-24.2.5.tgz#670e923fa62ddb0efe14271a5de13b145f1bf7a6"
+  integrity sha512-CwqEX73fhn3UKpPVM4nTLcZ2G5uhtA6qi35mSfnM7KSk8vFF+HHuebpOkXjoWC8/6/jfx2aO6vR/L4XDCexkFw==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-buttons" "~24.2.5"
+    "@syncfusion/ej2-calendars" "~24.2.5"
+    "@syncfusion/ej2-compression" "~24.2.3"
+    "@syncfusion/ej2-data" "~24.2.3"
+    "@syncfusion/ej2-dropdowns" "~24.2.5"
+    "@syncfusion/ej2-excel-export" "~24.2.4"
+    "@syncfusion/ej2-file-utils" "~24.2.3"
+    "@syncfusion/ej2-inputs" "~24.2.5"
+    "@syncfusion/ej2-lists" "~24.2.4"
+    "@syncfusion/ej2-navigations" "~24.2.4"
+    "@syncfusion/ej2-notifications" "~24.2.4"
+    "@syncfusion/ej2-pdf-export" "~24.2.3"
+    "@syncfusion/ej2-popups" "~24.2.5"
+    "@syncfusion/ej2-splitbuttons" "~24.2.5"
+
+"@syncfusion/ej2-icons@~24.2.3":
+  version "24.2.3"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-icons/-/ej2-icons-24.2.3.tgz#8cbb15a812a39b5acb9a08b5e384ea137432ba7d"
+  integrity sha512-JdQ7w2SiiUUXZFrmX0j3+0iQZdT+Z5NP7jb1zTKDAiTGB3IjcSTQc8MtPmORTG4vvG6lOSLYHrn2HtP7mqvlEQ==
+
+"@syncfusion/ej2-inputs@~24.2.4", "@syncfusion/ej2-inputs@~24.2.5", "@syncfusion/ej2-inputs@~24.2.6":
+  version "24.2.6"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-inputs/-/ej2-inputs-24.2.6.tgz#45cc1300feb7a0b682c07d7d9e640c07b2fb0270"
+  integrity sha512-Sua9+AuMEJIyAdAlzVWwANpH26V8gwtnSnRUgOBKG2AKuT/FHHV9DXIeEyRAsDfVLgW+TRyNqODag79rYIre9w==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-buttons" "~24.2.5"
+    "@syncfusion/ej2-popups" "~24.2.5"
+    "@syncfusion/ej2-splitbuttons" "~24.2.5"
+
+"@syncfusion/ej2-lists@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-lists/-/ej2-lists-24.2.4.tgz#b14d271496b4c15affcdbc2fa5e0d56b51bc4a69"
+  integrity sha512-F64rDZhoKgWwnWNm+w0Rd2PVcr8nfOV/cEVPXWYrHlcuX9s+1kD+F7u7zyJdE8fPm8gGqC+385aA96jUTin55w==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+    "@syncfusion/ej2-buttons" "~24.2.3"
+    "@syncfusion/ej2-data" "~24.2.3"
+    "@syncfusion/ej2-popups" "~24.2.3"
+
+"@syncfusion/ej2-navigations@24.2.4", "@syncfusion/ej2-navigations@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-navigations/-/ej2-navigations-24.2.4.tgz#aed6f56c8e87714f131415d140687c103c392c55"
+  integrity sha512-KZVJrDvZROGcAxbkfgMW/gpCdkalj3x1pkxje1au5dg7n2VPCrI5Qo2aeGSWWHU1N5cHoM6VRY/MdWBrzHu2yQ==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+    "@syncfusion/ej2-buttons" "~24.2.3"
+    "@syncfusion/ej2-data" "~24.2.3"
+    "@syncfusion/ej2-inputs" "~24.2.4"
+    "@syncfusion/ej2-lists" "~24.2.4"
+    "@syncfusion/ej2-popups" "~24.2.3"
+
+"@syncfusion/ej2-notifications@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-notifications/-/ej2-notifications-24.2.4.tgz#2d4ba937b5f5d2ed8e56f7b92dba9685e592a826"
+  integrity sha512-14oBybExHpxSF88p5tbMvURoUnVNOj4nBDZJo1fnU8fb8KxHvmxtSm5ObLwe4nGiPZ/1QspGyLwL2GLKM0Ncig==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+    "@syncfusion/ej2-buttons" "~24.2.3"
+    "@syncfusion/ej2-popups" "~24.2.3"
+
+"@syncfusion/ej2-pdf-export@~24.2.3":
+  version "24.2.3"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-pdf-export/-/ej2-pdf-export-24.2.3.tgz#9726e5b975225903a32ed0de4498fc1e621c8c1b"
+  integrity sha512-h6fmsSxQA4BuwuYusPruQYUrdyH1NJIXMrcRN0zAhORPEKDeLy/jp1qiBILBtjGFI3JWxVRXfz4Fm6Ln7j766A==
+  dependencies:
+    "@syncfusion/ej2-compression" "~24.2.3"
+
+"@syncfusion/ej2-popups@~24.2.3", "@syncfusion/ej2-popups@~24.2.5":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-popups/-/ej2-popups-24.2.5.tgz#4f18039aaf14dea7be25bc08c1cadead175c283a"
+  integrity sha512-ZDzqAGVavK/kl7Q6SBHl8HwXxoHPNtDlLQmZ0fIdwCWaGfO1KIpFcwPv6jizFKxoe7bGxAzIV4qPRmrMWoOBxA==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-buttons" "~24.2.5"
+
+"@syncfusion/ej2-splitbuttons@~24.2.5":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-splitbuttons/-/ej2-splitbuttons-24.2.5.tgz#a8ca43f305cd83dab08fc27439588585cd98d70f"
+  integrity sha512-CxwI1u0IdOAIiOdn5GHYK/QL9TAuSv1k8hwKEtmMgO0iUvYHGH7b3UM+L3zHJyvUnW1lvuNuhk+oNfY1rLMq5w==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-popups" "~24.2.5"
+
+"@syncfusion/ej2-vue-base@~24.2.3":
+  version "24.2.3"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-vue-base/-/ej2-vue-base-24.2.3.tgz#790e3db0d202d0983eb32f0c984e1505509b85f3"
+  integrity sha512-58uX2UfzuJ3jcuhL1KqYcR/O9zAFuCcW9W+KqOZD9QcO6uRRjvmeUjIE4BG4Igat3iorf+xKBvwLXySOsmQSug==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+
+"@syncfusion/ej2-vue-grids@*":
+  version "24.2.5"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-vue-grids/-/ej2-vue-grids-24.2.5.tgz#e43f08f350267523a30aef58d6c478488e632955"
+  integrity sha512-jZsJGon3B5bE2NPW66gaAI7QLjfbnlo8cDqv5d3zhTfjWrliEWbrNbndgtgm3aUlZQuu3XqeIcjIuo9yNOAVpQ==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.5"
+    "@syncfusion/ej2-grids" "24.2.5"
+    "@syncfusion/ej2-vue-base" "~24.2.3"
+
+"@syncfusion/ej2-vue-navigations@*":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-vue-navigations/-/ej2-vue-navigations-24.2.4.tgz#3ac8fc81d48bad4ea44ae899c6b7e74002ffcb3f"
+  integrity sha512-D3kCB/cX0CibV3OOD4OUVeC9dgDJ1l+baqZWXGjtMYe8V0uk5Sbzc35QhL6sTdkoUA/W0xL6KZ+HbbI99ibFOA==
+  dependencies:
+    "@syncfusion/ej2-base" "~24.2.3"
+    "@syncfusion/ej2-navigations" "24.2.4"
+    "@syncfusion/ej2-vue-base" "~24.2.3"
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -1399,6 +1737,11 @@
     vue-template-es2015-compiler "^1.9.0"
   optionalDependencies:
     prettier "^1.18.2"
+
+"@vue/devtools-api@^6.0.0-beta.13":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.5.1.tgz#7f71f31e40973eeee65b9a64382b13593fdbd697"
+  integrity sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==
 
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.2"
@@ -3052,6 +3395,13 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
   integrity sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.1:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
 
@@ -7425,15 +7775,15 @@ source-map-url@^0.4.0:
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
   integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
 
+source-map@0.6.1, source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+
 source-map@^0.5.0, source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
-
-source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
-  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 source-map@^0.7.3:
   version "0.7.3"
@@ -8255,6 +8605,16 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-i18n@9.2.0-beta.2:
+  version "9.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-9.2.0-beta.2.tgz#df3933ff9c23366d8c5549005bfcf92ed43bde3b"
+  integrity sha512-Zp6B/4hI+/mPUDVg21mdeSMpa8NcbwIZ5J7EJeBo04nUzwraBSJFztSPCYanFB7hXNsJMfwBO880vGmN0DJq4w==
+  dependencies:
+    "@intlify/core-base" "9.2.0-beta.2"
+    "@intlify/shared" "9.2.0-beta.2"
+    "@intlify/vue-devtools" "9.2.0-beta.2"
+    "@vue/devtools-api" "^6.0.0-beta.13"
 
 "vue-loader-v16@npm:vue-loader@^16.0.0-beta.7":
   version "16.0.0-beta.8"
